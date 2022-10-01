@@ -1,3 +1,5 @@
+import BgImage from "./image.jpg";
+
 export default function home() {
   const container = document.createElement("div");
   container.classList.add("container");
@@ -15,6 +17,12 @@ export default function home() {
   pots and pans, which are important to us in terms of quality and
   functionality.`;
   container.appendChild(description);
+
+  const homeImage = new Image();
+  homeImage.src = BgImage;
+  homeImage.classList.add("bg-image");
+
+  container.appendChild(homeImage);
 
   return container;
 }

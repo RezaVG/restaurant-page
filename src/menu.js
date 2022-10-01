@@ -1,6 +1,9 @@
-export default function menu() {
-  const title = document.createElement("h1");
-  title.textContent = "Menu...";
+import Card1 from "./cards/card1";
 
-  return title;
+export default function menu() {
+  const menuDiv = document.createElement("div");
+  menuDiv.classList.add("menu");
+
+  menuDiv.appendChild(Card1());
+  return menuDiv;
 }

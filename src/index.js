@@ -6,6 +6,8 @@ import contact from "./contact";
 
 const content = document.getElementById("content");
 content.appendChild(home());
+const homeNav = document.querySelector("[data-key='home']");
+homeNav.classList.add("active");
 
 const navElements = document.querySelectorAll("li");
 navElements.forEach(el => {
